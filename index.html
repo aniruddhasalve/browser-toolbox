@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Private browser tools for developers, testers, and curious builders.">
+  <meta name="theme-color" content="#f4f1eb">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Browser Toolbox</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Browser Toolbox home">
+      <span class="brand-mark" aria-hidden="true">BT</span>
+      <span>Browser Toolbox</span>
+    </a>
+    <div class="top-actions">
+      <span class="privacy-note"><span class="status-dot" aria-hidden="true"></span>Runs locally in your browser</span>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main" class="shell">
+    <section id="top" class="hero">
+      <div class="eyebrow">A small utility desk for the web</div>
+      <h1>Useful tools.<br><em>Nothing leaves your device.</em></h1>
+      <p class="hero-copy">Format, compare, inspect, and generate without uploading your work. Built for developers, testers, and anyone who works with digital details.</p>
+      <div class="hero-meta"><span>07 tools</span><span class="meta-rule"></span><span>Offline-friendly</span><span class="meta-rule"></span><span>No account</span></div>
+    </section>
+
+    <section class="tool-grid" aria-label="Available tools">
+      <article class="tool-card featured" data-tool="json">
+        <div class="card-icon json-icon">{ }</div><div class="card-body"><div class="card-kicker">Most used</div><h2>JSON formatter</h2><p>Make structured data readable and catch syntax errors.</p><button class="text-link" data-open="json">Open tool <span>↗</span></button></div>
+      </article>
+      <article class="tool-card" data-tool="diff"><div class="card-icon diff-icon">±</div><div class="card-body"><div class="card-kicker">Compare</div><h2>Text diff</h2><p>See exactly what changed between two versions.</p><button class="text-link" data-open="diff">Open tool <span>↗</span></button></div></article>
+      <article class="tool-card" data-tool="base64"><div class="card-icon base-icon">01</div><div class="card-body"><div class="card-kicker">Encode</div><h2>Base64</h2><p>Encode or decode text locally with a clear output.</p><button class="text-link" data-open="base64">Open tool <span>↗</span></button></div></article>
+      <article class="tool-card" data-tool="uuid"><div class="card-icon uuid-icon">✦</div><div class="card-body"><div class="card-kicker">Generate</div><h2>UUID maker</h2><p>Create unique IDs in one click, or make a batch.</p><button class="text-link" data-open="uuid">Open tool <span>↗</span></button></div></article>
+      <article class="tool-card" data-tool="timestamp"><div class="card-icon time-icon">◷</div><div class="card-body"><div class="card-kicker">Convert</div><h2>Timestamp</h2><p>Translate Unix time into a human-readable date.</p><button class="text-link" data-open="timestamp">Open tool <span>↗</span></button></div></article>
+      <article class="tool-card" data-tool="contrast"><div class="card-icon contrast-icon">◑</div><div class="card-body"><div class="card-kicker">Accessibility</div><h2>Contrast checker</h2><p>Check readable color combinations against WCAG ratios.</p><button class="text-link" data-open="contrast">Open tool <span>↗</span></button></div></article>
+      <article class="tool-card" data-tool="regex"><div class="card-icon regex-icon">.*</div><div class="card-body"><div class="card-kicker">Inspect</div><h2>Regex tester</h2><p>Try a pattern against sample text with match details.</p><button class="text-link" data-open="regex">Open tool <span>↗</span></button></div></article>
+    </section>
+
+    <section class="principles">
+      <div><span class="section-label">Why this exists</span><h2>The simple promise.</h2></div>
+      <div class="principle-copy"><p>Tools should be quick to open, easy to understand, and safe to use with sensitive work. Browser Toolbox keeps the useful parts close and the data private.</p><a href="#about" class="outline-link">Read the approach <span>↓</span></a></div>
+    </section>
+
+    <section id="about" class="about-strip"><div><span class="section-label">Local by default</span><h2>Made for the moments<br>between bigger tasks.</h2></div><div class="about-points"><p><strong>Private.</strong> No uploads, no accounts, no analytics scripts.</p><p><strong>Practical.</strong> Focused tools with useful error states and copy-ready output.</p><p><strong>Open.</strong> Plain HTML, CSS, and JavaScript you can inspect and reuse.</p></div></section>
+  </main>
+
+  <dialog id="tool-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><div><span class="section-label" id="dialog-kicker">Tool</span><h2 id="dialog-title">Tool</h2></div><button class="close-button" id="dialog-close" type="button" aria-label="Close tool">×</button></div><div id="tool-content"></div></dialog>
+  <footer><span>Browser Toolbox</span><span>Private by design · Built with web standards</span></footer>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

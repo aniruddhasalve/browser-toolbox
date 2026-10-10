@@ -1,0 +1,10 @@
+{
+  "name": "Browser Toolbox",
+  "short_name": "Toolbox",
+  "description": "Private browser tools for developers and testers.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f1eb",
+  "theme_color": "#f4f1eb",
+  "icons": []
+}
